@@ -1,19 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merienda:wght@700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                fontFamily: {
+                    merienda: ['Merienda', 'cursive']
+                },
+                extend: {
+                    colors: {
+                        text: '#ffff',
+                    }
+                }
+            }
+        }
+    </script>
+
     <title>Delivery</title>
 </head>
-<body>
-    <nav>
-        <a href="/">Inicío</a>
-        <a href="/carrinho"> Carrinho </a>
-    </nav>
 
-    <h1>{{ titulo }}</h1>
-    {% block conteudo %}
-    {% endblock %}
+<body>
+    <div class="flex w-full h-full absolute z-0" style="background-image: url('../static/pizza3.svg')"></div>
+    <div class="flex relative text-text m-0 font-merienda justify-between flex-row z-10">
+        <nav class="bg-[#1E1E1E] flex h-20 w-screen justify-between">
+            <div class="text-5xl items-center flex ml-6">Pizza Delivery</div>
+            <div class="items-center flex mr-6 gap-2">
+                <a class="" href="/">Inicío \ </a>
+                <a href="/carrinho"> Carrinho \ </a>
+                <a href="/sobre"> Sobre \ </a>
+                <a href="/atendimento"> Atendimento </a>
+                <a href="/perfil"> Perfil </a>
+            </div>
+        </nav>
+        <div>
+            <h1 class="text-black ">{{ titulo }}</h1>
+            {% block conteudo %}
+            {% endblock %}
+        </div>
+    </div>
 </body>
+
 </html>
