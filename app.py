@@ -8,27 +8,27 @@ def home():
 
 @app.route("/carrinho")
 def carrinho():
-    return render_template("paginas/carrinho.html", titulo='Este é seu carrinho')
+    return render_template("paginas/carrinho.html")
 
 @app.route("/sobre")
 def sobre():
-    return render_template("paginas/sobre.html", titulo='Este é seu sobre')
+    return render_template("paginas/sobre.html")
 
 @app.route("/perfil")
 def perfil():
-    return render_template("paginas/perfil.html", titulo='Este é seu perfil')
+    return render_template("paginas/perfil.html")
 
 @app.route("/combos")
 def combos():
-    return render_template("paginas/combos.html", titulo='Este é seu combos')
+    return render_template("paginas/combos.html")
 
 @app.route("/pizzas")
 def pizzas():
-    return render_template("paginas/pizzas.html", titulo='Este é seu pizzas')
+    return render_template("paginas/pizzas.html")
 
 @app.route("/bebidas")
 def bebidas():
-    return render_template("paginas/bebidas.html", titulo='Este é seu bebidas')
+    return render_template("paginas/bebidas.html")
 
 if __name__ == '__main__':
     app.run(debug=True)
