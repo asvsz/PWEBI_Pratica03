@@ -1,4 +1,31 @@
 {% extends 'menu.html'%}
-{% block menu %}
-    <h1>{{ titulo }}</h1>
+{% block conteudo %}
+<div class="flex w-full justify-center space-x-20 gap-5  mt-36">
+    <div class="shadow-lg shadow-[#1E1E1E] space-y-6 flex-col rounded-3xl pt-6 font-merienda 
+    justify-items-center bg-[#D9D9D9] h-72 w-60 ">
+        <div class="text-4xl text-center">Combos</div>
+        <div class="text-3xl text-center" >A partir de</div>
+        <div class="text-4xl text-center">R$ 10,99</div>
+
+        <button class="rounded-3xl bg-black text-white w-44 h-8 ml-7"><a href="/combos"> Ver </a></button>
+    </div>
+
+    <div class="shadow-lg shadow-[#1E1E1E] space-y-6 flex-col rounded-3xl pt-6 font-merienda 
+    justify-items-center bg-[#D9D9D9] h-72 w-60 ">
+        <div class="text-4xl text-center">Pizzas</div>
+        <div class="text-3xl text-center" >A partir de</div>
+        <div class="text-4xl text-center">R$ 10,99</div>
+
+        <button class="rounded-3xl bg-black text-white w-44 h-8 ml-7"><a href="/pizzas"> Ver </a></button>
+    </div>
+
+    <div class="shadow-lg shadow-[#1E1E1E] space-y-6 flex-col rounded-3xl pt-6 font-merienda 
+    justify-items-center bg-[#D9D9D9] h-72 w-60 ">
+        <div class="text-4xl text-center">Bebidas</div>
+        <div class="text-3xl text-center" >A partir de</div>
+        <div class="text-4xl text-center">R$ 10,99</div>
+
+        <button class="rounded-3xl bg-black text-white w-44 h-8 ml-7"><a href="/bebidas"> Ver </a></button>
+    </div>
+</div>
 {% endblock %}

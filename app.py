@@ -18,9 +18,17 @@ def sobre():
 def perfil():
     return render_template("paginas/perfil.html", titulo='Este é seu perfil')
 
-@app.route("/atendimento")
-def atendimento():
-    return render_template("paginas/atendimento.html", titulo='Este é seu atendimento')
+@app.route("/combos")
+def combos():
+    return render_template("paginas/combos.html", titulo='Este é seu combos')
+
+@app.route("/pizzas")
+def pizzas():
+    return render_template("paginas/pizzas.html", titulo='Este é seu pizzas')
+
+@app.route("/bebidas")
+def bebidas():
+    return render_template("paginas/bebidas.html", titulo='Este é seu bebidas')
 
 if __name__ == '__main__':
     app.run(debug=True)
